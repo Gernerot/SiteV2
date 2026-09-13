@@ -1,0 +1,134 @@
+/* --- ОБЩИЕ НАСТРОЙКИ --- */
+body {
+    background-image: url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* --- ГЛАВНАЯ СТРАНИЦА --- */
+.main-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 1000px;
+    width: 90%;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.cards-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Карточки-ссылки */
+.card {
+    background-color: white;
+    width: 260px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Картинка внутри карточки */
+.card-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    margin: 10px 0;
+    color: #333;
+    font-size: 22px;
+}
+
+.card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+
+/* --- СТРАНИЦА ИГРЫ (Squad) --- */
+.game-page-content {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 900px;
+    width: 90%;
+    color: white;
+    box-sizing: border-box;
+}
+
+.back-btn {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.back-btn:hover {
+    color: #0056b3;
+}
+
+/* Галерея из 3 скриншотов в ряд */
+.photo-gallery {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.game-photo {
+    width: 32%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.game-photo:hover {
+    transform: scale(1.05);
+}
+
+.text-block {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.text-block p {
+    margin-bottom: 15px;
+}
